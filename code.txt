@@ -1,0 +1,57 @@
+gotDefSess = App.HasDefaultSession
+If gotDefSess = False Then
+'User = Form.txtUID.Text
+'Password = Form.txtPwd.Text
+SessionId = App.Login(User, Password, False)
+End If
+'open up remedy form
+
+
+
+gotDefSess = App.HasDefaultSession
+If gotDefSess = False Then
+User = InputBox("Nombre de usuario de Remedy", "Remedy UserID")
+Password = InputBox("Contraseña de Remedy", "Remedy Password")
+SessionId = App.Login(User, Password, False)
+
+
+
+******************************************************
+
+
+    Set ARForm = App.GetActiveForm
+        ARForm.GiveFieldFocusById (1)
+    Set ObjField = ARForm.GetFieldById(1)
+        ObjField.Value = TktNum
+        SendKeys "^{Enter}", Wait:=True
+
+*********************************************
+
+
+SendKeys "{Enter}", Wait:=True
+Set ARFormF = App.GetActiveForm
+Set ObjField = ARFormF.GetFieldById(1)
+TktNum = ObjField.Value
+
+
+*********************************************
+
+
+SendKeys "{Enter}", Wait:=True
+Set ARFormF = App.GetActiveForm
+ARForm.GiveFieldFocusById (1)
+Set ObjField = ARFormF.GetFieldById(1)
+TktNum = ObjField.Value
+
+
+
+
+
+***************************
+
+
+    Set ARFormF = App.GetActiveForm
+        ARFormF.GiveFieldFocusById (1)
+    Set ObjField = ARFormF.GetFieldById(1)
+        ObjField.Value = TktNum
+        SendKeys "^{Enter}", Wait:=True

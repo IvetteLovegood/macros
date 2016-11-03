@@ -1,0 +1,83 @@
+USUARIOS
+
+****************************************************************
+
+Administrador
+
+.\fdmexico
+Welcome123
+
+****************************************************************
+
+Maquina Virtual
+
+fdmexico
+Welcome123
+
+
+****************************************************************
+
+Remedy
+
+fdcsf02
+Nala2042+
+
+****************************************************************
+
+Maquina
+
+f8c828on
+Welcome34
+
+
+****************************************************************
+
+ARWARN [75] No free floating write license tokens are available.
+Currently accessing the system in read-only mode.
+License will upgrade when one is available. : a3pvap115
+
+ARERR [8932] You do not have write license
+ARERR [330] You do not have write access to this field. :  Approval
+
+
+
+
+"C:\Program Files\Common Files\System\ado\msado20.tlb"
+
+"C:\Program Files\Common Files\microsoft shared\OFFICE14\MSOXMLED.EXE"
+
+
+*******************
+
+gotDefSess = App.HasDefaultSession
+        If gotDefSess = False Then
+            User = InputBox("Nombre de usuario de Remedy", "Remedy UserID")
+            Password = InputBox("Contraseña de Remedy", "Remedy Password")
+            SessionId = App.Login(User, Password, False)
+        End If
+*****************
+
+
+gotDefSess = App.HasDefaultSession
+If gotDefSess = False Then
+'User = Form.txtUID.Text
+'Password = Form.txtPwd.Text
+SessionId = App.Login(User, Password, False)
+End If
+
+"C:\Program Files\Attachmate\EXTRA!\AtmCpEdt.exe" /RegServer
+
+
+
+
+
+"C:\Program Files\AR System\User\aruser.exe" /RegServer
+
+"C:\Program Files\AR System\User\ARTask.exe" /regserver
+
+"C:\Program Files\Microsoft Office\Office12\EXCEL.EXE" /regserver
+C:\Program Files\Common Files\microsoft shared\DAO\dao360.dll
+"C:\Program Files\AR System\User\arodbc71.dll"
+"C:\Program Files\AR System\User\resdlls\0009\RWUtlRes71.dll"
+
+"C:\Program Files\Common Files\System\Ole DB\oledb32.dll"

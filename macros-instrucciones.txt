@@ -1,0 +1,33 @@
+Abrir terminal en modo administrador 
+Ingresar el siguiente comando:
+
+"C:\Program Files\AR System\User\aruser.exe" /RegServer
+
+En la carpeta G:\CRC-OPERATIONS\Back Office Consultas\PRUEBAS MACROS\PruebasMacros\Configuracion
+se encuentra un archivo datime. dll hay que copiarlo a nuestra maquina local puede ser en escritorio o documentos
+
+y luego copiarla a la siguiente ruta con permisos de administrador:
+
+C:\Windows\System32
+
+y vamos a ejecutar los siguientes comandos en nuestra terminal.
+
+regsvr32 datime.dll
+regsvr32 scrrun.dll
+regsvr32 olepro32.dll
+
+Dependiendo la version de Visual Basic que tengamos instalada en nuestra computadora vamos a ejecutar el comando correspondiente a la version
+Si no sabemos que version tenemos podemos ejecutar ambos, uno nos dara un error de registro que no afecta ninguna funcionalidad.
+Si tenemos ambas versiones, los dos registros seran exitosos:
+
+regsvr32  "C:\Program Files\Common Files\microsoft shared\VBA\VBA6\VBE6.DLL"
+regsvr32  "C:\Program Files\Common Files\microsoft shared\VBA\VBA7\VBE7.DLL"
+
+Por último debemos asegurarnos que la carpeta de nombre Attachmate se encuentre en la ruta C:\Program Files si no encontramos esta carpeta podemos copiar la version que se encuentra en la siguiente ruta:
+G:\CRC-OPERATIONS\Back Office Consultas\PRUEBAS MACROS\PruebasMacros\Configuracion
+
+Con esta configuración previa las macros funcionaran correctamente.
+
+
+
+

@@ -1,0 +1,20 @@
+"C:\Program Files\Microsoft Lync\Appshapi.dll"
+"C:\Program Files\Common Files\System\DirectDB.dll"
+
+"C:\Program Files\Common Files\System\Ole DB\msdadc.dll"
+
+"C:\Program Files\Common Files\System\Ole DB\Resources\1033\"
+"C:\Program Files\Common Files\System\MSMAPI\1033\MSMAPI32.DLL"
+
+"C:\Program Files\Common Files\System\MSMAPI\3082\MSMAPI32.DLL"
+
+"C:\Program Files\Common Files\microsoft shared\DW\DBGHELP.DLL"
+
+"C:\Program Files\Common Files\microsoft shared\VC\msdia90.dll"
+
+regsvr32 "C:\Program Files\Common Files\microsoft shared\VGX\VGX.dll"
+
+regsvr32 "C:\Program Files\Common Files\microsoft shared\MSClientDataMgr\MSCDM.DLL"
+
+regsvr32 "C:\Program Files\Common Files\microsoft shared\MSORUN\MSORUN.DLL"
+regsvr32 "C:\Program Files\Common Files\microsoft shared\OFFICE14\MSO.DLL"
