@@ -1,0 +1,559 @@
+Private Sub Gestión_de_Llamada_Click()
+On Error GoTo Gestión_de_Llamada_Click_Err
+
+If Me![Puesto].Value = "Consulta-USV" Then
+
+       'Validaciones Obligatorios
+        If Me.[Marca] = "" Or IsEmpty(Me.[Marca]) Or IsNull(Me.[Marca]) Then
+            MsgBox "El campo Marca es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Agencia_Alianza] = "" Or IsEmpty(Me.[Agencia_Alianza]) Or IsNull(Me.[Agencia_Alianza]) Then
+            MsgBox "El campo Alianza/Agencia es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Tasa Crédito Nacional] = "" Or IsEmpty(Me.[Tasa Crédito Nacional]) Or IsNull(Me.[Tasa Crédito Nacional]) Then
+            MsgBox "El campo Tasa Crédito Nacional es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Tasa Crédito y Débito Internacional] = "" Or IsEmpty(Me.[Tasa Crédito y Débito Internacional]) Or IsNull(Me.[Tasa Crédito y Débito Internacional]) Then
+            MsgBox "El campo Tasa Crédito y Débito Internacional es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Tasa Débito Nacional] = "" Or IsEmpty(Me.[Tasa Débito Nacional]) Or IsNull(Me.[Tasa Débito Nacional]) Then
+            MsgBox "El campo Tasa Débito Nacional es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Tipo de Persona] = "" Or IsEmpty(Me.[Tipo de Persona]) Or IsNull(Me.[Tipo de Persona]) Then
+            MsgBox "El campo Tipo de Persona es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Descripción de Estatus] = "" Or IsEmpty(Me.[Descripción de Estatus]) Or IsNull(Me.[Descripción de Estatus]) Then
+            MsgBox "El campo Estatus es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+
+        If Me.[NOMBRE COMERCIAL] = "" Or IsEmpty(Me.[NOMBRE COMERCIAL]) Or IsNull(Me.[NOMBRE COMERCIAL]) Then
+            MsgBox "El campo Nombre Comercial es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Razón Social] = "" Or IsEmpty(Me.[Razón Social]) Or IsNull(Me.[Razón Social]) Then
+            MsgBox "El campo Razón Social es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[RFC] = "" Or IsEmpty(Me.[RFC]) Or IsNull(Me.[RFC]) Then
+            MsgBox "El campo RFC es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[E-mail] = "" Or IsEmpty(Me.[E-mail]) Or IsNull(Me.[E-mail]) Then
+            MsgBox "El campo E-mail es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Contacto] = "" Or IsEmpty(Me.[Contacto]) Or IsNull(Me.[Contacto]) Then
+            MsgBox "El campo Contacto es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Telefono 1] = "" Or IsEmpty(Me.[Telefono 1]) Or IsNull(Me.[Telefono 1]) Then
+            MsgBox "El campo Contacto es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Campaña] = "" Or IsEmpty(Me.[Campaña]) Or IsNull(Me.[Campaña]) Then
+            MsgBox "El campo Campaña es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Tipo de Tramite] = "" Or IsEmpty(Me.[Tipo de Tramite]) Or IsNull(Me.[Tipo de Tramite]) Then
+            MsgBox "El campo Tipo de Trámite es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Producto o Servicio] = "" Or IsEmpty(Me.[Producto o Servicio]) Or IsNull(Me.[Producto o Servicio]) Then
+            MsgBox "El campo Producto o Servicio es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Minimo de Procesamiento] = "" Or IsEmpty(Me.[Minimo de Procesamiento]) Or IsNull(Me.[Minimo de Procesamiento]) Then
+            MsgBox "El campo Minimo de Procesamiento es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Giro comercial Sugerido] = "" Or IsEmpty(Me.[Giro comercial Sugerido]) Or IsNull(Me.[Giro comercial Sugerido]) Then
+            MsgBox "El campo Giro comercial Sugerido es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Ventas Anuales Totales] = "" Or IsEmpty(Me.[Ventas Anuales Totales]) Or IsNull(Me.[Ventas Anuales Totales]) Then
+            MsgBox "El campo Ventas Anuales Totales es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Ventas Anuales con Tarjeta] = "" Or IsEmpty(Me.[Ventas Anuales con Tarjeta]) Or IsNull(Me.[Ventas Anuales con Tarjeta]) Then
+            MsgBox "El campo Ventas Anuales con Tarjeta es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Monto Promedio] = "" Or IsEmpty(Me.[Monto Promedio]) Or IsNull(Me.[Monto Promedio]) Then
+            MsgBox "El campo Monto Promedio es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Tipo de Solucion] = "" Or IsEmpty(Me.[Tipo de Solucion]) Or IsNull(Me.[Tipo de Solucion]) Then
+            MsgBox "El campo Tipo de Solucion es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Moneda] = "" Or IsEmpty(Me.[Moneda]) Or IsNull(Me.[Moneda]) Then
+            MsgBox "El campo Moneda es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Simulador] = "" Or IsEmpty(Me.[Simulador]) Or IsNull(Me.[Simulador]) Then
+            MsgBox "El campo Simulador es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+                If Me.[Calle] = "" Or IsEmpty(Me.[Calle]) Or IsNull(Me.[Calle]) Then
+            MsgBox "El campo Calle es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Numero Exterior] = "" Or IsEmpty(Me.[Numero Exterior]) Or IsNull(Me.[Numero Exterior]) Then
+            MsgBox "El campo Número Exterior es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+                If Me.[Numero Interior] = "" Or IsEmpty(Me.[Numero Interior]) Or IsNull(Me.[Numero Interior]) Then
+            MsgBox "El campo Número Interior es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+                If Me.[CP] = "" Or IsEmpty(Me.[CP]) Or IsNull(Me.[CP]) Then
+            MsgBox "El campo Codigo Postal es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Banco] = "" Or IsEmpty(Me.[Banco]) Or IsNull(Me.[Banco]) Then
+            MsgBox "El campo Banco es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Cuenta Bancaria] = "" Or IsEmpty(Me.[Cuenta Bancaria]) Or IsNull(Me.[Cuenta Bancaria]) Then
+            MsgBox "El campo Cuenta Bancaria es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Codigo de Banco] = "" Or IsEmpty(Me.[Codigo de Banco]) Or IsNull(Me.[Codigo de Banco]) Then
+            MsgBox "El campo Codigo de Banco es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+                If Me.[Requiere Banamex] = "" Or IsEmpty(Me.[Requiere Banamex]) Or IsNull(Me.[Requiere Banamex]) Then
+            MsgBox "El campo Requiere Banamex es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Requiere MSI PROSA] = "" Or IsEmpty(Me.[Requiere MSI PROSA]) Or IsNull(Me.[Requiere MSI PROSA]) Then
+            MsgBox "El campo Requiere MSI PROSA es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Requiere MSI Bancomer] = "" Or IsEmpty(Me.[Requiere MSI Bancomer]) Or IsNull(Me.[Requiere MSI Bancomer]) Then
+            MsgBox "El campo Requiere MSI Bancomer es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+                If Me.[Colonia] = "" Or IsEmpty(Me.[Colonia]) Or IsNull(Me.[Colonia]) Then
+            MsgBox "El campo Colonia es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+                If Me.[Delegacion/Municipio] = "" Or IsEmpty(Me.[Delegacion/Municipio]) Or IsNull(Me.[Delegacion/Municipio]) Then
+            MsgBox "El campo Delegación - Municipio es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+
+                If Me.[Estado] = "" Or IsEmpty(Me.[Estado]) Or IsNull(Me.[Estado]) Then
+            MsgBox "El campo Estado es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        
+    
+    DoCmd.OpenForm "Mesa de Trabajo_Espejo", acNormal, "", , acFormReadOnly, acNormal
+       
+        'DoCmd.OpenForm "Gestión de Llamada", acNormal, "", "[Folio MC]=" & " '" & [Folio MC] & "'", acFormAdd
+        DoCmd.OpenForm "Gestión de Llamada", acNormal, "", , acFormReadOnly, acWindowNormal
+        
+       
+        Forms![Gestión de Llamada]![Puesto].Value = Me![Puesto].Value
+        Forms![Gestión de Llamada]![Tipo de Trámite].Value = Me![Tipo de Trámite].Value
+        Forms![Gestión de Llamada]![Razón Social].Value = Me![Razón Social].Value
+        Forms![Gestión de Llamada]![Representante Legal].Value = Me![Representante Legal].Value
+        Forms![Gestión de Llamada]![Contacto].Value = Me![Contacto].Value
+        Forms![Gestión de Llamada]![Terminal Class A].Value = Me![Expr1094].Value
+        Forms![Gestión de Llamada]![Terminal Class B].Value = Me![Expr1095].Value
+        Forms![Gestión de Llamada]![Terminal Otros].Value = Me![Expr1096].Value
+        
+        Forms![Gestión de Llamada]![$ Renta  IP A].Value = Me![Expr1111].Value
+        Forms![Gestión de Llamada]![$ Renta  IP B].Value = Me![Expr1112].Value
+        Forms![Gestión de Llamada]![$ Renta  IP C].Value = Me![$ Renta  IP C].Value
+        
+        
+        Forms![Gestión de Llamada]![Analista].Value = Me![Analista].Value
+        Forms![Gestión de Llamada]![Analista 1].Value = Me![Analista 1].Value
+        Forms![Gestión de Llamada]![Analista 2].Value = Me![Analista 2].Value
+        Forms![Gestión de Llamada]![Folio MC].Value = Me![Folio MC].Value
+        'Forms![Gestión de Llamada]![Folio MC].Value = Me![Folio MC Titulo].Value
+        Forms![Gestión de Llamada]![Folio Sol Simplificada].Value = Me![Folio Sol Simplificada].Value
+        Forms![Gestión de Llamada]![MID].Value = Me![MID].Value
+        Forms![Gestión de Llamada]![Venta Maxima].Value = Me![Venta Maxima con Tarjeta].Value
+        
+                Forms![Gestión de Llamada]![Calle].Value = Me![Calle].Value
+        Forms![Gestión de Llamada]![No Exterior].Value = Me![Numero Exterior].Value
+        Forms![Gestión de Llamada]![No Interior].Value = Me![Numero Interior].Value
+        Forms![Gestión de Llamada]![CP].Value = Me![CP].Value
+        Forms![Gestión de Llamada]![Colonia].Value = Me![Colonia].Value
+        Forms![Gestión de Llamada]![Delegacion/Municipio].Value = Me![Delegacion/Municipio].Value
+        Forms![Gestión de Llamada]![Estado].Value = Me![Estado].Value
+        
+        Forms![Gestión de Llamada]![Telefono 1].Value = Me![Telefono 1].Value
+        Forms![Gestión de Llamada]![Telefono 2].Value = Me![Telefono 2].Value
+        Forms![Gestión de Llamada]![Telefono 3].Value = Me![Telefono 3].Value
+        
+        'Forms![Gestión de Llamada]![NombreComercial].Value = Me![NOMBRE COMERCIAL].Value
+        Forms![Gestión de Llamada]![NOMBRE COMERCIAL].Value = Me![NOMBRE COMERCIAL].Value
+        Forms![Gestión de Llamada]![Razón Social].Value = Me![Razón Social].Value
+        Forms![Gestión de Llamada]![Representante Legal].Value = Me![Representante Legal].Value
+        Forms![Gestión de Llamada]![Contacto].Value = Me![Contacto].Value
+        Forms![Gestión de Llamada]![E-mail].Value = Me![E-mail].Value
+        'Forms![Gestión de Llamada]![Actividad comercial].Value = Me![Actividad comercial].Value
+        Forms![Gestión de Llamada]![Producto o Servicio].Value = Me![Producto o Servicio].Value
+        Forms![Gestión de Llamada]![Giro comercial Sugerido].Value = Me![Giro comercial Sugerido].Value
+        'Forms![Gestión de Llamada]![Ventas Anuales Totales].Value = Me![Ventas Anuales Totales].Value
+        Forms![Gestión de Llamada]![Ventas Anuales con Tarjeta].Value = Me![Ventas Anuales con Tarjeta].Value
+        Forms![Gestión de Llamada]![Monto Promedio].Value = Me![Monto Promedio].Value
+        'Forms![Gestión de Llamada]![Ventas mensuales con Tarjeta].Value = Me![Ventas mensuales con Tarjeta].Value
+        'Forms![Gestión de Llamada]![Número de Terminales].Value = Me![Número de Terminales].Value
+        Forms![Gestión de Llamada]![Tasa Crédito Nacional].Value = Me![Tasa Crédito Nacional].Value
+        Forms![Gestión de Llamada]![Tasa Débito Nacional].Value = Me![Tasa Débito Nacional].Value
+        Forms![Gestión de Llamada]![Tasa Crédito y Débito Internacional].Value = Me![Tasa Crédito y Débito Internacional].Value
+        'Forms![Gestión de Llamada]![TPV-APP].Value = Me![TPV-APP].Value
+       ' Forms![Gestión de Llamada]![Teclado Abierto].Value = Me![Teclado Abierto].Value
+        Forms![Gestión de Llamada]![Tipo de Solucion].Value = Me![Tipo de Solucion].Value
+        Forms![Gestión de Llamada]![Tipo de Trámite].Value = Me![Tipo de Trámite].Value
+         'Forms![Gestión de Llamada]![NombreComercial].Value = Me![NOMBRE COMERCIAL].Value
+      
+        Forms![Gestión de Llamada]![# IP A].Value = Me![# IP A].Value
+        Forms![Gestión de Llamada]![$ Renta  IP A].Value = Me![$ Renta  IP A].Value
+        Forms![Gestión de Llamada]![# IP B].Value = Me![# IP B].Value
+        Forms![Gestión de Llamada]![$ Renta  IP B].Value = Me![$ Renta  IP B].Value
+        Forms![Gestión de Llamada]![# IP C].Value = Me![# IP A].Value
+        Forms![Gestión de Llamada]![$ Renta  IP C].Value = Me![$ Renta  IP C].Value
+        
+        Forms![Gestión de Llamada].Refresh
+
+    
+    Giro = Me.[Giro comercial Sugerido].Value
+    
+    If Giro = 5021 Or Giro = 5712 Or Giro = 7394 Or Giro = 5211 Or Giro = 7623 Or Giro = 5978 Or Giro = 5039 Or Giro = 5085 Then
+       Forms![Gestión de Llamada]![Maneja tiempos de entrega].Visible = True
+      Forms![Gestión de Llamada]![Porcentaje promedio].Visible = True
+       Forms![Gestión de Llamada]![Dias de entrega].Visible = True
+    Else
+        Forms![Gestión de Llamada]![Maneja tiempos de entrega].Visible = False
+       Forms![Gestión de Llamada]![Porcentaje promedio].Visible = False
+        Forms![Gestión de Llamada]![Dias de entrega].Visible = False
+    End If
+
+    If Giro = 5013 Or Giro = 5511 Or Giro = 5532 Or Giro = 5598 Or Giro = 5599 Or Giro = 7538 Or Giro = 5533 Then
+       Forms![Gestión de Llamada]![Venden Automóviles Usados].Visible = True
+
+    Else
+        Forms![Gestión de Llamada]![Venden Automóviles Usados].Visible = False
+    End If
+    
+    ''
+    
+        'Aqui se cierran los IF de las valudaciones
+
+    'Aqui se cierran los IF de las valudaciones
+    End If
+    End If
+    End If
+    End If
+    End If
+
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+       End If
+    End If
+    End If
+         End If
+    End If
+    End If
+    End If
+  
+    
+Else
+        
+        'Validaciones Obligatorios
+        If Me.[Marca] = "" Or IsEmpty(Me.[Marca]) Or IsNull(Me.[Marca]) Then
+            MsgBox "El campo Marca es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Agencia_Alianza] = "" Or IsEmpty(Me.[Agencia_Alianza]) Or IsNull(Me.[Agencia_Alianza]) Then
+            MsgBox "El campo Alianza/Agencia es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Tasa Crédito Nacional] = "" Or IsEmpty(Me.[Tasa Crédito Nacional]) Or IsNull(Me.[Tasa Crédito Nacional]) Then
+            MsgBox "El campo Tasa Crédito Nacional es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Tasa Crédito y Débito Internacional] = "" Or IsEmpty(Me.[Tasa Crédito y Débito Internacional]) Or IsNull(Me.[Tasa Crédito y Débito Internacional]) Then
+            MsgBox "El campo Tasa Crédito y Débito Internacional es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Tasa Débito Nacional] = "" Or IsEmpty(Me.[Tasa Débito Nacional]) Or IsNull(Me.[Tasa Débito Nacional]) Then
+            MsgBox "El campo Tasa Débito Nacional es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Tipo de Persona] = "" Or IsEmpty(Me.[Tipo de Persona]) Or IsNull(Me.[Tipo de Persona]) Then
+            MsgBox "El campo Tipo de Persona es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Descripción de Estatus] = "" Or IsEmpty(Me.[Descripción de Estatus]) Or IsNull(Me.[Descripción de Estatus]) Then
+            MsgBox "El campo Estatus es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+
+        
+        If Me.[NOMBRE COMERCIAL] = "" Or IsEmpty(Me.[NOMBRE COMERCIAL]) Or IsNull(Me.[NOMBRE COMERCIAL]) Then
+            MsgBox "El campo Nombre Comercial es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Razón Social] = "" Or IsEmpty(Me.[Razón Social]) Or IsNull(Me.[Razón Social]) Then
+            MsgBox "El campo Razón Social es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[RFC] = "" Or IsEmpty(Me.[RFC]) Or IsNull(Me.[RFC]) Then
+            MsgBox "El campo RFC es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[E-mail] = "" Or IsEmpty(Me.[E-mail]) Or IsNull(Me.[E-mail]) Then
+            MsgBox "El campo E-mail es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Contacto] = "" Or IsEmpty(Me.[Contacto]) Or IsNull(Me.[Contacto]) Then
+            MsgBox "El campo Contacto es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Telefono 1] = "" Or IsEmpty(Me.[Telefono 1]) Or IsNull(Me.[Telefono 1]) Then
+            MsgBox "El campo Contacto es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Campaña] = "" Or IsEmpty(Me.[Campaña]) Or IsNull(Me.[Campaña]) Then
+            MsgBox "El campo Campaña es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Tipo de Tramite] = "" Or IsEmpty(Me.[Tipo de Tramite]) Or IsNull(Me.[Tipo de Tramite]) Then
+            MsgBox "El campo Tipo de Trámite es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Producto o Servicio] = "" Or IsEmpty(Me.[Producto o Servicio]) Or IsNull(Me.[Producto o Servicio]) Then
+            MsgBox "El campo Producto o Servicio es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Minimo de Procesamiento] = "" Or IsEmpty(Me.[Minimo de Procesamiento]) Or IsNull(Me.[Minimo de Procesamiento]) Then
+            MsgBox "El campo Minimo de Procesamiento es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Giro comercial Sugerido] = "" Or IsEmpty(Me.[Giro comercial Sugerido]) Or IsNull(Me.[Giro comercial Sugerido]) Then
+            MsgBox "El campo Giro comercial Sugerido es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Ventas Anuales Totales] = "" Or IsEmpty(Me.[Ventas Anuales Totales]) Or IsNull(Me.[Ventas Anuales Totales]) Then
+            MsgBox "El campo Ventas Anuales Totales es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Ventas Anuales con Tarjeta] = "" Or IsEmpty(Me.[Ventas Anuales con Tarjeta]) Or IsNull(Me.[Ventas Anuales con Tarjeta]) Then
+            MsgBox "El campo Ventas Anuales con Tarjeta es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Monto Promedio] = "" Or IsEmpty(Me.[Monto Promedio]) Or IsNull(Me.[Monto Promedio]) Then
+            MsgBox "El campo Monto Promedio es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Tipo de Solucion] = "" Or IsEmpty(Me.[Tipo de Solucion]) Or IsNull(Me.[Tipo de Solucion]) Then
+            MsgBox "El campo Tipo de Solucion es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Moneda] = "" Or IsEmpty(Me.[Moneda]) Or IsNull(Me.[Moneda]) Then
+            MsgBox "El campo Moneda es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Simulador] = "" Or IsEmpty(Me.[Simulador]) Or IsNull(Me.[Simulador]) Then
+            MsgBox "El campo Simulador es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+                If Me.[Calle] = "" Or IsEmpty(Me.[Calle]) Or IsNull(Me.[Calle]) Then
+            MsgBox "El campo Calle es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Numero Exterior] = "" Or IsEmpty(Me.[Numero Exterior]) Or IsNull(Me.[Numero Exterior]) Then
+            MsgBox "El campo Número Exterior es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+                If Me.[Numero Interior] = "" Or IsEmpty(Me.[Numero Interior]) Or IsNull(Me.[Numero Interior]) Then
+            MsgBox "El campo Número Interior es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+                If Me.[CP] = "" Or IsEmpty(Me.[CP]) Or IsNull(Me.[CP]) Then
+            MsgBox "El campo Codigo Postal es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+        If Me.[Banco] = "" Or IsEmpty(Me.[Banco]) Or IsNull(Me.[Banco]) Then
+            MsgBox "El campo Banco es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Cuenta Bancaria] = "" Or IsEmpty(Me.[Cuenta Bancaria]) Or IsNull(Me.[Cuenta Bancaria]) Then
+            MsgBox "El campo Cuenta Bancaria es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Codigo de Banco] = "" Or IsEmpty(Me.[Codigo de Banco]) Or IsNull(Me.[Codigo de Banco]) Then
+            MsgBox "El campo Codigo de Banco es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+                If Me.[Requiere Banamex] = "" Or IsEmpty(Me.[Requiere Banamex]) Or IsNull(Me.[Requiere Banamex]) Then
+            MsgBox "El campo Requiere Banamex es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Requiere MSI PROSA] = "" Or IsEmpty(Me.[Requiere MSI PROSA]) Or IsNull(Me.[Requiere MSI PROSA]) Then
+            MsgBox "El campo Requiere MSI PROSA es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        If Me.[Requiere MSI Bancomer] = "" Or IsEmpty(Me.[Requiere MSI Bancomer]) Or IsNull(Me.[Requiere MSI Bancomer]) Then
+            MsgBox "El campo Requiere MSI Bancomer es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+        
+                If Me.[Colonia] = "" Or IsEmpty(Me.[Colonia]) Or IsNull(Me.[Colonia]) Then
+            MsgBox "El campo Colonia es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+                If Me.[Delegacion/Municipio] = "" Or IsEmpty(Me.[Delegacion/Municipio]) Or IsNull(Me.[Delegacion/Municipio]) Then
+            MsgBox "El campo Delegación - Municipio es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+
+                If Me.[Estado] = "" Or IsEmpty(Me.[Estado]) Or IsNull(Me.[Estado]) Then
+            MsgBox "El campo Estado es Obligatorio", vbCritical, "Mesa de Recepcion"
+        Else
+
+        
+        
+        
+        
+        'Fin Validaciones Obligatorio
+        DoCmd.OpenForm "Gestión de Llamada", acNormal, "", , , acWindowNormal
+        
+               
+        Forms![Gestión de Llamada]![Puesto].Value = Me![Puesto].Value
+        Forms![Gestión de Llamada]![Tipo de Trámite].Value = Me![Tipo de Trámite].Value
+        Forms![Gestión de Llamada]![Razón Social].Value = Me![Razón Social].Value
+        Forms![Gestión de Llamada]![Representante Legal].Value = Me![Representante Legal].Value
+        Forms![Gestión de Llamada]![Contacto].Value = Me![Contacto].Value
+        Forms![Gestión de Llamada]![Terminal Class A].Value = Me![Expr1094].Value
+        Forms![Gestión de Llamada]![Terminal Class B].Value = Me![Expr1095].Value
+        Forms![Gestión de Llamada]![Terminal Otros].Value = Me![Expr1096].Value
+        
+        Forms![Gestión de Llamada]![$ Renta  IP A].Value = Me![Expr1111].Value
+        Forms![Gestión de Llamada]![$ Renta  IP B].Value = Me![Expr1112].Value
+        Forms![Gestión de Llamada]![$ Renta  IP C].Value = Me![$ Renta  IP C].Value
+        
+        Forms![Gestión de Llamada]![Puesto].Value = Me![Puesto].Value
+        Forms![Gestión de Llamada]![Analista].Value = Me![Analista].Value
+        Forms![Gestión de Llamada]![Analista 1].Value = Me![Analista 1].Value
+        Forms![Gestión de Llamada]![Analista 2].Value = Me![Analista 2].Value
+        Forms![Gestión de Llamada]![Folio MC].Value = Me![Folio MC].Value
+        'Forms![Gestión de Llamada]![Folio MC].Value = Me![Folio MC Titulo].Value
+        Forms![Gestión de Llamada]![Folio Sol Simplificada].Value = Me![Folio Sol Simplificada].Value
+        Forms![Gestión de Llamada]![MID].Value = Me![MID].Value
+        
+        Forms![Gestión de Llamada]![Calle].Value = Me![Calle].Value
+        Forms![Gestión de Llamada]![No Exterior].Value = Me![Numero Exterior].Value
+        Forms![Gestión de Llamada]![No Interior].Value = Me![Numero Interior].Value
+        Forms![Gestión de Llamada]![CP].Value = Me![CP].Value
+        Forms![Gestión de Llamada]![Colonia].Value = Me![Colonia].Value
+        Forms![Gestión de Llamada]![Delegacion/Municipio].Value = Me![Delegacion/Municipio].Value
+        Forms![Gestión de Llamada]![Estado].Value = Me![Estado].Value
+
+        Forms![Gestión de Llamada]![Telefono 1].Value = Me![Telefono 1].Value
+        Forms![Gestión de Llamada]![Telefono 2].Value = Me![Telefono 2].Value
+        Forms![Gestión de Llamada]![Telefono 3].Value = Me![Telefono 3].Value
+        
+        'Forms![Gestión de Llamada]![Nombre Comer_T].Value = Me![NOMBRE COMERCIAL].Value
+        Forms![Gestión de Llamada]![NOMBRE COMERCIAL].Value = Me![NOMBRE COMERCIAL].Value
+        Forms![Gestión de Llamada]![Razón Social].Value = Me![Razón Social].Value
+        Forms![Gestión de Llamada]![Representante Legal].Value = Me![Representante Legal].Value
+        Forms![Gestión de Llamada]![Contacto].Value = Me![Contacto].Value
+        Forms![Gestión de Llamada]![E-mail].Value = Me![E-mail].Value
+        'Forms![Gestión de Llamada]![Actividad comercial].Value = Me![Actividad comercial].Value
+        Forms![Gestión de Llamada]![Producto o Servicio].Value = Me![Producto o Servicio].Value
+        Forms![Gestión de Llamada]![Giro comercial Sugerido].Value = Me![Giro comercial Sugerido].Value
+        'Forms![Gestión de Llamada]![Ventas Anuales Totales].Value = Me![Ventas Anuales Totales].Value
+        Forms![Gestión de Llamada]![Ventas Anuales con Tarjeta].Value = Me![Ventas Anuales con Tarjeta].Value
+        Forms![Gestión de Llamada]![Monto Promedio].Value = Me![Monto Promedio].Value
+        'Forms![Gestión de Llamada]![Ventas mensuales con Tarjeta].Value = Me![Ventas mensuales con Tarjeta].Value
+        'Forms![Gestión de Llamada]![Número de Terminales].Value = Me![Número de Terminales].Value
+        Forms![Gestión de Llamada]![Tasa Crédito Nacional].Value = Me![Tasa Crédito Nacional].Value
+        Forms![Gestión de Llamada]![Tasa Débito Nacional].Value = Me![Tasa Débito Nacional].Value
+        Forms![Gestión de Llamada]![Tasa Crédito y Débito Internacional].Value = Me![Tasa Crédito y Débito Internacional].Value
+        'Forms![Gestión de Llamada]![TPV-APP].Value = Me![TPV-APP].Value
+        'Forms![Gestión de Llamada]![Teclado Abierto].Value = Me![Teclado Abierto].Value
+        Forms![Gestión de Llamada]![Tipo de Solucion].Value = Me![Tipo de Solucion].Value
+        
+        Forms![Gestión de Llamada]![# IP A].Value = Me![# IP A].Value
+        Forms![Gestión de Llamada]![$ Renta  IP A].Value = Me![$ Renta  IP A].Value
+        Forms![Gestión de Llamada]![# IP B].Value = Me![# IP B].Value
+        Forms![Gestión de Llamada]![$ Renta  IP B].Value = Me![$ Renta  IP B].Value
+        Forms![Gestión de Llamada]![# IP C].Value = Me![# IP A].Value
+        Forms![Gestión de Llamada]![$ Renta  IP C].Value = Me![$ Renta  IP C].Value
+        
+        
+        ' Forms![Gestión de Llamada]![NombreComercial].Value = Me![NOMBRE COMERCIAL].Value
+      
+        Forms![Gestión de Llamada].Refresh
+        
+        
+
+    
+    Giro = Me.[Giro comercial Sugerido].Value
+    
+    If Giro = 5021 Or Giro = 5712 Or Giro = 7394 Or Giro = 5211 Or Giro = 7623 Or Giro = 5978 Or Giro = 5039 Or Giro = 5085 Then
+       Forms![Gestión de Llamada]![Maneja tiempos de entrega].Visible = True
+       Forms![Gestión de Llamada]![Porcentaje promedio].Visible = True
+       Forms![Gestión de Llamada]![Dias de entrega].Visible = True
+    Else
+        Forms![Gestión de Llamada]![Maneja tiempos de entrega].Visible = False
+        Forms![Gestión de Llamada]![Porcentaje promedio].Visible = False
+        Forms![Gestión de Llamada]![Dias de entrega].Visible = False
+    End If
+
+    If Giro = 5013 Or Giro = 5511 Or Giro = 5532 Or Giro = 5598 Or Giro = 5599 Or Giro = 7538 Or Giro = 5533 Then
+       Forms![Gestión de Llamada]![Venden Automóviles Usados].Visible = True
+
+    Else
+        Forms![Gestión de Llamada]![Venden Automóviles Usados].Visible = False
+    End If
+    'Aqui se cierran los IF de las valudaciones
+    End If
+    End If
+    End If
+    End If
+    End If
+ 
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+    End If
+       End If
+    End If
+    End If
+         End If
+    End If
+    End If
+    End If
+  
+
+    
+    
+    ''''''
+End If
+
+    
+Gestión_de_Llamada_Click_Exit:
+    Exit Sub
+
+Gestión_de_Llamada_Click_Err:
+    MsgBox Error$
+    Resume Gestión_de_Llamada_Click_Exit
+
+End Sub
+
+
